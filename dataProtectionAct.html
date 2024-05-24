@@ -6,155 +6,156 @@
     <title>Data Protection Act 1998</title>
     <style>
         body {
-            background: linear-gradient(0deg, #ffffff 0%, #f2d2a9 100%);
-            background-image: url('https://wallpapers.com/images/hd/paris-aesthetic-yi5146ugao47ztms.jpg');
-            background-size: cover;
-            background-position: center;
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-image: url("bg.jpg");
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: fill;
+            background-attachment: fixed;
+        }
+        .content {
             text-align: center;
-            margin: 0;
-            padding: 0;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            max-width: 800px;
+            margin: 40px auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
         }
-        .center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
+        h1, h2, h3, h5 {
+            margin: 10px 0;
         }
-        .left {
-            text-align: left;
-            margin-left: 20px;
-            width: 100%;
-        }
-        pRed {
+        .highlight {
             color: red;
-        }
-        .image-shadow {
-            box-shadow: 5px 5px 18px 0px #f2d2a9, 5px 5px 10px 1px #000000;
-        }
-        .animate-image {
-            animation: revealImage 2s ease-out forwards;
-            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-        }
-        @keyframes revealImage {
-            to {
-                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-            }
+            font-weight: bold;
         }
         .topLeft {
             position: absolute;
-            top: 50px;
-            left: 50px;
+            top: 3em;
+            left: 3em;
             padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .dropdown {
+            text-align: left;
+            width: 60%;
+            max-width: 800px;
+            margin: 0 auto 20px auto;
         }
         .dropdown-content {
             max-height: 0;
             overflow: hidden;
-            transition: max-height 3s ease-out;
-            text-align: left;
-            margin: 20px auto;
-            border: 1px solid #000;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8);
-            border-radius: 5px;
-            width: 80%;
-            max-width: 800px;
+            transition: max-height 0.5s ease-out;
+            border: 1px solid #000000;
+            padding: 0 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
-        .dropdown-content p {
+        .dropdown-content ul {
+            padding-left: 20px;
+            text-align: left;
+        }
+        .dropdown-content li {
             margin: 5px 0;
         }
+        .dropdown-content a {
+            display: block;
+            padding: 10px 0;
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .dropdown-content a:hover {
+            text-decoration: underline;
+        }
         .show {
-            max-height: 1000px; /* Adjust as needed based on content */
+            max-height: 500px; /* Adjust based on content */
         }
         h4 {
             cursor: pointer;
+            margin: 10px 0;
+            color: #007BFF;
+        }
+        h4:hover {
+            text-decoration: underline;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <h1>Data Protection Act 1998</h1>
-    <p>Details about the Data Protection Act 1998...</p>
-    <p class="topLeft"><a href="index.html" style="font-size: 24px; color: red; text-decoration: underline;">Back</a></p>
-    <h4 onclick="toggleDropdown('dropdown)"><u>Main Principles</u></h4>
-    <div id="dropdown" class="dropdown-content" onclick="toggleDropdown('dropdown')">
-        <p>Everyone responsible for developing systems that store personal data as well as those using and maintaining those systems have to follow strict rules called ‘data protection principles’. They must make sure the information is:</p>
-        <ul>
-            <li>used fairly, lawfully, and transparently</li>
-            <li>used for specified, explicit purposes</li>
-            <li>used in a way that is adequate, relevant, and limited to only what is necessary</li>
-            <li>accurate and, where necessary, kept up to date</li>
-            <li>kept for no longer than is necessary</li>
-            <li>handled in a way that ensures appropriate security, including protection against unlawful or unauthorised processing, access, loss, destruction, or damage</li>
-        </ul>
+    <div class="topLeft">
+        <a href="index.html" style="font-size: 24px; color: red; text-decoration: underline;">Back</a>
     </div>
-	<h4 onclick="toggleDropdown()"><u>Your Rights</u></h4>
-    <div id="dropdown2" class="dropdown-content" onclick="toggleDropdown('dropdown2')">
-        <p>Under the Data Protection Act 2018, you have the right to find out what information the government and other organisations store about you. These include the right to:</p>
-        <ul>
-            <li>be informed about how your data is being used</li>
-            <li>access personal data</li>
-            <li>have incorrect data amended</li>
-            <li>have data erased</li>
-            <li>stop or restrict the processing of your data</li>
-            <li>restrict the portability of data, or sharing with third parties</li>
-			<li>object to how your data is processed in certain circumstances</li>
-		</ul>
-		
-		<p>You also have rights when an organisation is using your personal data for:</p>
-		<ul>
-			<li>automated decision-making processes (without human involvement), e.g. deciding whether to offer you a credit card or loan</li>
-			<li>profiling, for example to predict your behaviour or interests (as can be done by cookies)</li>
-        </ul>
-	</div>
-		<h4 onclick="toggleDropdown('dropdown3')"><u>Access To Data</u></h4>
-    <div id="dropdown3" class="dropdown-content" onclick="toggleDropdown('dropdown3')">
-        <p>If you want to see the data that an organisation holds on you, you need to make a written request. 
-		If it is a public organisation, write to their data protection officer (DPO). Their details should be
-		on the organisation’s privacy notice. If the organisation has no DPO, or you do not know who to write
-		to, address your letter to the company secretary.
-		The organisation must give you a copy of the data they hold about you as soon as possible, and within one month at most.
-		In certain circumstances, for example particularly complex or multiple requests, the organisation can take 
-		a further two months to provide data. In this case, they must tell you:</p>
-        <ul>
-            <li>within one month of your request</li>
-            <li>why there’s a delay</li>
-		</ul>
-		
-		<p>You also have rights when an organisation is using your personal data for:</p>
-		<ul>            
-			<li>the prevention, detection, or investigation of a crime</li>
-            <li>national security or the armed forces</li>
-            <li>the assessment or collection of tax</li>
-            <li>judicial or ministerial appointments</li>
-		</ul>
-		<p>An organisation does not have to say why they’re withholding information.
-		Requests for information are usually free. However, organisations can charge an 
-		administrative cost in some circumstances. For example if:</p>
-		<ul>
-		<li> you’re asking for a large amount of information</li>
-		<li> your request will take a lot of time and effort to process</li>
-	</div>
-	
-			<h4 onclick="toggleDropdown('dropdown4')"><u>What Happens When Something Goes Wrong?</u></h4>
-    <div id="dropdown4" class="dropdown-content" onclick="toggleDropdown('dropdown4')">
-        <p>If you think your data has been misused or that the organisation holding it has not kept it secure,
-		you should contact them and tell them. If you’re unhappy with their response or if you need any advice,
-		you should contact the Information Commissioner’s Office (ICO).<br>
-		There have been some high profile cases of companies being fined for contravening the law. In 2019,
-		British Airways was fined £183m for its poor security arrangements, which saw the unauthorised
-		access of data including customer names, home addresses, travel booking info, and payment card 
-		details. Later that year the ICO fined the Marriott hotel chain £99m for failing to protect
-		personal data contained in almost 500 million guest records.<br>
-		Both incidents were the result of external hacking, whereby third parties managed to gain access 
-		to personal data through flaws in each company’s online security. At one time, large companies 
-		would try to 'hush up' hacking exploits to protect their reputation. Today, data protection legislation
-		requires them to notify the ICO of any security breaches that compromise personal data.</p>
+    <div class="content">
+        <h1>Data Protection Act 1998</h1>
+        <p>Details about the Data Protection Act 1998...</p>
 
-	</div>
+        <h4 onclick="toggleDropdown('dropdown1')"><u>Main Principles</u></h4>
+        <div id="dropdown1" class="dropdown-content">
+            <p>Everyone responsible for developing systems that store personal data as well as those using and maintaining those systems have to follow strict rules called ‘data protection principles’. They must make sure the information is:</p>
+            <ul>
+                <li>used fairly, lawfully, and transparently</li>
+                <li>used for specified, explicit purposes</li>
+                <li>used in a way that is adequate, relevant, and limited to only what is necessary</li>
+                <li>accurate and, where necessary, kept up to date</li>
+                <li>kept for no longer than is necessary</li>
+                <li>handled in a way that ensures appropriate security, including protection against unlawful or unauthorised processing, access, loss, destruction, or damage</li>
+            </ul>
+        </div>
+
+        <h4 onclick="toggleDropdown('dropdown2')"><u>Your Rights</u></h4>
+        <div id="dropdown2" class="dropdown-content">
+            <p>Under the Data Protection Act 2018, you have the right to find out what information the government and other organisations store about you. These include the right to:</p>
+            <ul>
+                <li>be informed about how your data is being used</li>
+                <li>access personal data</li>
+                <li>have incorrect data amended</li>
+                <li>have data erased</li>
+                <li>stop or restrict the processing of your data</li>
+                <li>data portability, or sharing with third parties</li>
+                <li>object to how your data is processed in certain circumstances</li>
+            </ul>
+            <p>You also have rights when an organisation is using your personal data for:</p>
+            <ul>
+                <li>automated decision-making processes (without human involvement), e.g. deciding whether to offer you a credit card or loan</li>
+                <li>profiling, for example to predict your behaviour or interests (as can be done by cookies)</li>
+            </ul>
+        </div>
+
+        <h4 onclick="toggleDropdown('dropdown3')"><u>Access To Data</u></h4>
+        <div id="dropdown3" class="dropdown-content">
+            <p>If you want to see the data that an organisation holds on you, you need to make a written request. If it is a public organisation, write to their data protection officer (DPO). Their details should be on the organisation’s privacy notice. If the organisation has no DPO, or you do not know who to write to, address your letter to the company secretary. The organisation must give you a copy of the data they hold about you as soon as possible, and within one month at most. In certain circumstances, for example particularly complex or multiple requests, the organisation can take a further two months to provide data. In this case, they must tell you:</p>
+            <ul>
+                <li>within one month of your request</li>
+                <li>why there’s a delay</li>
+            </ul>
+            <p>An organisation does not have to say why they’re withholding information. Requests for information are usually free. However, organisations can charge an administrative cost in some circumstances. For example if:</p>
+            <ul>
+                <li>you’re asking for a large amount of information</li>
+                <li>your request will take a lot of time and effort to process</li>
+            </ul>
+        </div>
+
+        <h4 onclick="toggleDropdown('dropdown4')"><u>What Happens When Something Goes Wrong?</u></h4>
+        <div id="dropdown4" class="dropdown-content">
+            <p>If you think your data has been misused or that the organisation holding it has not kept it secure, you should contact them and tell them. If you’re unhappy with their response or if you need any advice, you should contact the Information Commissioner’s Office (ICO). There have been some high profile cases of companies being fined for contravening the law. In 2019, British Airways was fined £183m for its poor security arrangements, which saw the unauthorised access of data including customer names, home addresses, travel booking info, and payment card details. Later that year the ICO fined the Marriott hotel chain £99m for failing to protect personal data contained in almost 500 million guest records. Both incidents were the result of external hacking, whereby third parties managed to gain access to personal data through flaws in each company’s online security. At one time, large companies would try to 'hush up' hacking exploits to protect their reputation. Today, data protection legislation requires them to notify the ICO of any security breaches that compromise personal data.</p>
+        </div>
+    </div>
+
     <script>
         function toggleDropdown(dropDownID) {
             var dropdown = document.getElementById(dropDownID);
             dropdown.classList.toggle("show");
         }
     </script>
-
 </body>
 </html>

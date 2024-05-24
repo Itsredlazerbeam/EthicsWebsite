@@ -6,26 +6,29 @@
     <title>Copyright Legislation And Control</title>
     <style>
         body {
-            background: linear-gradient(0deg, #ffffff 0%, #f2d2a9 100%);
-            background-image: url('https://wallpapers.com/images/hd/paris-aesthetic-yi5146ugao47ztms.jpg');
-            background-size: cover;
-            background-position: center;
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-image: url("bg.jpg");
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: fill;
+            background-attachment: fixed;
+        }
+        .content {
             text-align: center;
-            margin: 0;
-            padding: 0;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            max-width: 800px;
+            margin: 40px auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
         }
-        .center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
+        h1, h2, h3, h5 {
+            margin: 10px 0;
         }
-        .left {
-            text-align: left;
-            margin-left: 20px;
-            width: 100%;
-        }
-        pRed {
+        .highlight {
             color: red;
+            font-weight: bold;
         }
         .image-shadow {
             box-shadow: 5px 5px 18px 0px #f2d2a9, 5px 5px 10px 1px #000000;
@@ -41,135 +44,153 @@
         }
         .topLeft {
             position: absolute;
-            top: 25px;
-            left: 50px;
+            top: 3em;
+            left: 3em;
             padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .dropdown {
+            top: 3em;
+            text-align: left;
+            width: 60%;
+            max-width: 800px;
         }
         .dropdown-content {
             max-height: 0;
             overflow: hidden;
-            transition: max-height 1s ease-out;
-            text-align: left;
-            margin: 20px auto;
-            border: 1px solid #000;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8);
-            border-radius: 5px;
-            width: 80%;
-            max-width: 800px;
+            transition: max-height 0.5s ease-out;
+            border: 1px solid #000000;
+            padding: 0 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
-        .dropdown-content p {
-            margin: 5px 0;
+        .dropdown-content p, .dropdown-content ul {
+            margin: 10px 0;
+        }
+        .dropdown-content ul {
+            padding-left: 20px;
         }
         .show {
-            max-height: 1000px; /* Adjust as needed based on content */
+            max-height: 1000px; /* Adjust based on content */
         }
         h4 {
             cursor: pointer;
+            margin: 10px 0;
+            color: #007BFF;
+        }
+        h4:hover {
+            text-decoration: underline;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <h1>Data Protection Act 1998</h1>
-    <p>The Copyright, Designs and Patents Act (1988) is the UK law that gives
-	an individual or organisation the right to control a piece of original work.
-	The Act applies equally to digital content, such as music and movies, as it
-	does to content in other forms, such as a painting or piece of sheet music.
-	Software licences are used to indicate to the user how the software can be used.
-	At an advanced level you can learn about the way digital content can be
-	protected through the use of rights management and software activation.</p>
-    <p class="topLeft"><a href="index.html" style="font-size: 24px; color: red; text-decoration: underline;">Back</a></p>
-    <h4 onclick="toggleDropdown('dropdown)"><u>Main Principles</u></h4>
-    <div id="dropdown" class="dropdown-content" onclick="toggleDropdown('dropdown')">
-        <p>The Copyright, Designs and Patents Act (1988) is legislation that allows 
-		an individual or organisation that has created a piece of original work, e.g.
-		a book or painting, the right to control the use of their work. The owner’s
-		rights cover the way that the work can be used, e.g. copying, adapting, 
-		broadcasting, or lending. The legislation covers:
-		<ul>
-			<li>Literary works</li>
-			<li>Dramatic works</li>
-			<li>Musical works</li>
-			<li>Artistic works</li>
-			<li>Typographical works</li>
-			<li>Sound recordings</li>
-			<li>Films</li>
-		</ul>
-		<p>Digital assets have the same protection as those produced in traditional form. The work does not have to be labelled as copyright.</p>
-		<p>The Copyright (Computer Programs) Regulations 1992 extended the Act to cover computer programs.</p>
-		<p>Most work is protected by copyright law for 70 years after the death of the author or composer, although some categories have shorter protection periods, including broadcasts (50 years) and computer-generated work (50 years).</p>
-		<p>A <strong>patent</strong> allows an original idea (within certain fields) to be protected. The shape or configuration of a product or item is protected by <strong>design rights</strong>. A <strong>trademark</strong> protects indications (e.g. a logo) of the commercial source of a product or service and remain in force as long as they are actively used or registered.</p>
-		<p>In this video, the creator and founder of Raspberry Pi, Eben Upton, discusses how trademarks allow him to defend the Raspberry Pi brand.</p>   
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/PuadUtkOlrA?si=6CUl4gL8ULCed9pK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-   </div>
-   
-   
-	<h4 onclick="toggleDropdown()"><u>Software Licenses</u></h4>
-    <div id="dropdown2" class="dropdown-content" onclick="toggleDropdown('dropdown2')">
-        <p>Developers release software under a licence.
-		Software users do not own the software, but they are permitted to use it if 
-		they agree to the licence terms. The licence may, or may not, place
-		restrictions on the user.
-		Software that does not place restrictions on users is known as free software.
-		Free software gives users the freedom to run, study, distribute, and modify 
-		the software. Nearly all open-source software is free software, but there are 
-		exceptions. For example, some open-source software does not give users the 
-		to make a modified version and then use it privately, meaning it cannot be 
-		classified as free software.</p>
-		
-		<p><br>Software is said to be proprietary if it is non-free, meaning there are 
-			restrictions placed on the user. Examples of these restrictions include:</p>
-		<ul>
-			<li>Limiting the number of computers on which the software can be used (often through the use of activation keys)</li>
-			<li>Specifying types of usage; for example, non-commercial, educational, or non-profit use</li>
-			<li>Not providing users with the ability to study or modify the source code 
-			(some proprietary software provides access to the source code, but restricts
-			users from distributing their modifications to the source code)</li>
-		</ul>
-	</div>
-	
-	
-	
-		<h4 onclick="toggleDropdown('dropdown3')"><u>Creative Commons</u></h4>
-    <div id="dropdown3" class="dropdown-content" onclick="toggleDropdown('dropdown3')">
-        <p>Computer networks and especially the internet have made it
-		very easy to share files. Whilst this helps authors who wish to 
-		share their work, it is not good for authors whose work is copied 
-		and/or shared illegally.
-		Some people think that because something is freely accessible on the internet,
-		it can be copied legally. However, this is not true. To use material that is 
-		protected by the legislation, you need to have permission. This may be freely
-		given, or the owner may insist on being named as the creator or owner of the 
-		copyright. A Creative Commons licence allows the owner to be attributed, or 
-		choose how others can share, use, or build on the material.</p>
+    <div class="content">
+        <h1>Data Protection Act 1998</h1>
+        <p>The Copyright, Designs and Patents Act (1988) is the UK law that gives
+        an individual or organisation the right to control a piece of original work.
+        The Act applies equally to digital content, such as music and movies, as it
+        does to content in other forms, such as a painting or piece of sheet music.
+        Software licences are used to indicate to the user how the software can be used.
+        At an advanced level you can learn about the way digital content can be
+        protected through the use of rights management and software activation.</p>
+        <p class="topLeft"><a href="index.html" style="font-size: 24px; color: red; text-decoration: underline;">Back</a></p>
 
-	</div>
-	
-			<h4 onclick="toggleDropdown('dropdown4')"><u>Digital Rights Management</u></h4>
-    <div id="dropdown4" class="dropdown-content" onclick="toggleDropdown('dropdown4')">
-        <p>Piracy is the illegal copying of software or data (e.g. movies)
-		without regard to copyright. The internet has made the distribution 
-		of pirated materials much easier to achieve, and harder for law 
-		enforcement agencies to detect.</p>
-		<p><br> Most modern content producers often employ some form of digital 
-		rights management (DRM) to prevent unauthorised distribution of their 
-		material. DRM is a set of access control tools that can limit the time 
-		period in which the material can be used (e.g. when renting a movie online),
-		the number of devices it can be used upon, or prevent the copying of the data
-		altogether. Some video games have famously included code to detect when 
-		a pirate copy of the game is being played and to cause strange things to 
-		happen within the game to inconvenience the player. For example, the 2000
-		video game Spyro: Year of the Dragon used checksums on the game data to check
-		if it was a pirate copy. If piracy was detected, it caused the player
-		to randomly teleport to different places in the game and to be forced to
-		repeat levels that had been previously completed.</p>
-	</div>
+        <h4 onclick="toggleDropdown('dropdown')"><u>Main Principles</u></h4>
+        <div id="dropdown" class="dropdown-content">
+            <p>The Copyright, Designs and Patents Act (1988) is legislation that allows 
+            an individual or organisation that has created a piece of original work, e.g.
+            a book or painting, the right to control the use of their work. The owner’s
+            rights cover the way that the work can be used, e.g. copying, adapting, 
+            broadcasting, or lending. The legislation covers:</p>
+            <ul>
+                <li>Literary works</li>
+                <li>Dramatic works</li>
+                <li>Musical works</li>
+                <li>Artistic works</li>
+                <li>Typographical works</li>
+                <li>Sound recordings</li>
+                <li>Films</li>
+            </ul>
+            <p>Digital assets have the same protection as those produced in traditional form. The work does not have to be labelled as copyright.</p>
+            <p>The Copyright (Computer Programs) Regulations 1992 extended the Act to cover computer programs.</p>
+            <p>Most work is protected by copyright law for 70 years after the death of the author or composer, although some categories have shorter protection periods, including broadcasts (50 years) and computer-generated work (50 years).</p>
+            <p>A <strong>patent</strong> allows an original idea (within certain fields) to be protected. The shape or configuration of a product or item is protected by <strong>design rights</strong>. A <strong>trademark</strong> protects indications (e.g. a logo) of the commercial source of a product or service and remain in force as long as they are actively used or registered.</p>
+            <p>In this video, the creator and founder of Raspberry Pi, Eben Upton, discusses how trademarks allow him to defend the Raspberry Pi brand.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/PuadUtkOlrA?si=6CUl4gL8ULCed9pK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        
+        <h4 onclick="toggleDropdown('dropdown2')"><u>Software Licenses</u></h4>
+        <div id="dropdown2" class="dropdown-content">
+            <p>Developers release software under a licence.
+            Software users do not own the software, but they are permitted to use it if 
+            they agree to the licence terms. The licence may, or may not, place
+            restrictions on the user.
+            Software that does not place restrictions on users is known as free software.
+            Free software gives users the freedom to run, study, distribute, and modify 
+            the software. Nearly all open-source software is free software, but there are 
+            exceptions. For example, some open-source software does not give users the 
+            right to make a modified version and then use it privately, meaning it cannot be 
+            classified as free software.</p>
+            <p>Software is said to be proprietary if it is non-free, meaning there are 
+            restrictions placed on the user. Examples of these restrictions include:</p>
+            <ul>
+                <li>Limiting the number of computers on which the software can be used (often through the use of activation keys)</li>
+                <li>Specifying types of usage; for example, non-commercial, educational, or non-profit use</li>
+                <li>Not providing users with the ability to study or modify the source code 
+                (some proprietary software provides access to the source code, but restricts
+                users from distributing their modifications to the source code)</li>
+            </ul>
+        </div>
+
+        <h4 onclick="toggleDropdown('dropdown3')"><u>Creative Commons</u></h4>
+        <div id="dropdown3" class="dropdown-content">
+            <p>Computer networks and especially the internet have made it
+            very easy to share files. Whilst this helps authors who wish to 
+            share their work, it is not good for authors whose work is copied 
+            and/or shared illegally.
+            Some people think that because something is freely accessible on the internet,
+            it can be copied legally. However, this is not true. To use material that is 
+            protected by the legislation, you need to have permission. This may be freely
+            given, or the owner may insist on being named as the creator or owner of the 
+            copyright. A Creative Commons licence allows the owner to be attributed, or 
+            choose how others can share, use, or build on the material.</p>
+        </div>
+
+        <h4 onclick="toggleDropdown('dropdown4')"><u>Digital Rights Management</u></h4>
+        <div id="dropdown4" class="dropdown-content">
+            <p>Piracy is the illegal copying of software or data (e.g. movies)
+            without regard to copyright. The internet has made the distribution 
+            of pirated materials much easier to achieve, and harder for law 
+            enforcement agencies to detect.</p>
+            <p>Most modern content producers often employ some form of digital 
+            rights management (DRM) to prevent unauthorised distribution of their 
+            material. DRM is a set of access control tools that can limit the time 
+            period in which the material can be used (e.g. when renting a movie online),
+            the number of devices it can be used upon, or prevent the copying of the data
+            altogether. Some video games have famously included code to detect when 
+            a pirate copy of the game is being played and to cause strange things to 
+            happen within the game to inconvenience the player. For example, the 2000
+            video game Spyro: Year of the Dragon used checksums on the game data to check
+            if it was a pirate copy. If piracy was detected, it caused the player
+            to randomly teleport to different places in the game and to be forced to
+            repeat levels that had been previously completed.</p>
+        </div>
+    </div>
     <script>
         function toggleDropdown(dropDownID) {
             var dropdown = document.getElementById(dropDownID);
             dropdown.classList.toggle("show");
         }
     </script>
-
 </body>
 </html>
