@@ -6,26 +6,29 @@
     <title>Computer Misuse Act 1990</title>
     <style>
         body {
-            background: linear-gradient(0deg, #ffffff 0%, #f2d2a9 100%);
-            background-image: url('https://wallpapers.com/images/hd/paris-aesthetic-yi5146ugao47ztms.jpg');
-            background-size: cover;
-            background-position: center;
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-image: url("bg.jpg");
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: fill;
+            background-attachment: fixed;
+        }
+        .content {
             text-align: center;
-            margin: 0;
-            padding: 0;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            max-width: 800px;
+            margin: 40px auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
         }
-        .center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
+        h1, h2, h3, h5 {
+            margin: 10px 0;
         }
-        .left {
-            text-align: left;
-            margin-left: 20px;
-            width: 100%;
-        }
-        pRed {
+        .highlight {
             color: red;
+            font-weight: bold;
         }
         .image-shadow {
             box-shadow: 5px 5px 18px 0px #f2d2a9, 5px 5px 10px 1px #000000;
@@ -41,64 +44,88 @@
         }
         .topLeft {
             position: absolute;
-            top: 50px;
-            left: 50px;
+            top: 3em;
+            left: 3em;
             padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .dropdown {
+            top: 3em;
+            text-align: left;
+            width: 60%;
+            max-width: 800px;
         }
         .dropdown-content {
             max-height: 0;
             overflow: hidden;
-            transition: max-height 3s ease-out;
-            text-align: left;
-            margin: 20px auto;
-            border: 1px solid #000;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8);
-            border-radius: 5px;
-            width: 80%;
-            max-width: 800px;
+            transition: max-height 0.5s ease-out;
+            border: 1px solid #000000;
+            padding: 0 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
-        .dropdown-content p {
-            margin: 5px 0;
+        .dropdown-content p, .dropdown-content ul {
+            margin: 10px 0;
+        }
+        .dropdown-content ul {
+            padding-left: 20px;
         }
         .show {
-            max-height: 1000px; /* Adjust as needed based on content */
+            max-height: 1000px; /* Adjust based on content */
         }
         h4 {
             cursor: pointer;
+            margin: 10px 0;
+            color: #007BFF;
+        }
+        h4:hover {
+            text-decoration: underline;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <h1>Computer Misuse Act 1990</h1>
-    <p>Details about the Computer Misuse Act 1990...</p>
-    <p class="topLeft"><a href="index.html" style="font-size: 24px; color: red; text-decoration: underline;">Back</a></p>
-    <h4 onclick="toggleDropdown('dropdown)"><u>Main Principles</u></h4>
-    <div id="dropdown" class="dropdown-content" onclick="toggleDropdown('dropdown')">
-        <p>The Computer Misuse Act (CMA) became law in the UK in 1990.<br>
-		Amendments to the Act have strengthened the legislation in an attempt
-		to keep up with cybercriminals. In 2015, the maximum penalty was raised
-		from 10 years to 14 years for hacking causing serious damage, and to life
-		imprisonment in cases where human welfare or national security is affected</p>
+    <div class="content">
+        <h1>Computer Misuse Act 1990</h1>
+        <p>Details about the Computer Misuse Act 1990...</p>
+        <p class="topLeft"><a href="index.html" style="font-size: 24px; color: red; text-decoration: underline;">Back</a></p>
 
-		<p>Attempts to break into a computer system are illegal, even if they are not
-		successful, and the penalty goes up if hacking is accompanied by other offences,
-		such as fraud or extortion.
-		Virus writing is illegal, even if you write the virus for another person and
-		do not release it yourself.</p>
-		<p>
-		In this video, we look at the history of the Computer Misuse Act 1990,
-		showing how new laws are created in response to new technologies, or 
-		new uses of technologies. The offences covered in the Act are also discussed,
-		as well as the wider impact this legislation has on society.</p>
+        <h4 onclick="toggleDropdown('dropdown')"><u>Main Principles</u></h4>
+        <div id="dropdown" class="dropdown-content">
+            <p>The Computer Misuse Act (CMA) became law in the UK in 1990.<br>
+            Amendments to the Act have strengthened the legislation in an attempt
+            to keep up with cybercriminals. In 2015, the maximum penalty was raised
+            from 10 years to 14 years for hacking causing serious damage, and to life
+            imprisonment in cases where human welfare or national security is affected.</p>
+
+            <p>Attempts to break into a computer system are illegal, even if they are not
+            successful, and the penalty goes up if hacking is accompanied by other offences,
+            such as fraud or extortion. Virus writing is illegal, even if you write the virus for another person and
+            do not release it yourself.</p>
+            <p>In this video, we look at the history of the Computer Misuse Act 1990,
+            showing how new laws are created in response to new technologies, or 
+            new uses of technologies. The offences covered in the Act are also discussed,
+            as well as the wider impact this legislation has on society.</p>
+        </div>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/QF03mDblTRE?si=yieeoWWeVuEXGMWX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
     </div>
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/QF03mDblTRE?si=yieeoWWeVuEXGMWX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
     <script>
         function toggleDropdown(dropDownID) {
             var dropdown = document.getElementById(dropDownID);
             dropdown.classList.toggle("show");
         }
     </script>
-
 </body>
 </html>

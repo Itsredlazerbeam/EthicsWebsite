@@ -6,26 +6,30 @@
     <title>Eiffel Tower</title>
     <style>
         body {
-            background: linear-gradient(0deg, #ffffff 0%, #f2d2a9 100%);
-            background-image: url('https://wallpapers.com/images/hd/paris-aesthetic-yi5146ugao47ztms.jpg');
-            background-size: cover;
-            background-position: center;
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-image: url("bg.jpg");
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: fill;
+            background-attachment: fixed;
+            
+        }
+        .content {
             text-align: center;
-            margin: 0;
-            padding: 0;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            max-width: 800px;
+            margin: 40px auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
         }
-        .center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
+        h1, h2, h3, h5 {
+            margin: 10px 0;
         }
-        .left {
-            text-align: left;
-            margin-left: 20px;
-            width: 100%;
-        }
-        pRed {
+        .highlight {
             color: red;
+            font-weight: bold;
         }
         .image-shadow {
             box-shadow: 5px 5px 18px 0px #f2d2a9, 5px 5px 10px 1px #000000;
@@ -41,50 +45,78 @@
         }
         .topLeft {
             position: absolute;
-            top: 50px;
-            left: 50px;
+            top: 3em;
+            left: 3em;
             padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .dropdown {
+            top: 3em;
+            text-align: left;
+            width: 60%;
+            max-width: 800px;
         }
         .dropdown-content {
             max-height: 0;
             overflow: hidden;
-            transition: max-height 1s ease-out;
-            text-align: left;
-            margin: 20px auto;
-            border: 1px solid #000;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8);
-            border-radius: 5px;
-            width: 40%;
-            max-width: 800px;border-radius: 5px;
+            transition: max-height 0.5s ease-out;
+            border: 1px solid #000000;
+            padding: 0 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }   
+        .dropdown-content a {
+            display: block;
+            padding: 10px 0;
+            color: #007BFF;
+            text-decoration: none;
         }
-        .dropdown-content p {
-            margin: 5px 0;
+        .dropdown-content a:hover {
+            text-decoration: underline;
         }
         .show {
-            max-height: 200px; /* Adjust as needed based on content */
+            max-height: 500px; /* Adjust based on content */
         }
         h4 {
             cursor: pointer;
+            margin: 10px 0;
+            color: #007BFF;
+        }
+        h4:hover {
+            text-decoration: underline;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <h1>La Tour Eiffel</h1>
-    <h2>Paris, France</h2>
-    <h3>Constructed 1887-1889</h3>
-    <pRed>Did you know there are 1665 steps on the Eiffel Tower?</pRed>
-    <p class="topLeft">This Website is Open Source! <br> <a href="https://github.com/SkellXC/EthicsWebsite"> Contribute here<a></p>
-
-    <h4 onclick="toggleDropdown()"><u>Laws</u></h4>
-    <div id="dropdown" class="dropdown-content" onclick="toggleDropdown()">
-        <p><a href="dataProtectionAct.html">The Data Protection Act 1998</a></p>
-        <p><a href="ComputerMisuseAct.html">The Computer Misuse Act 1990</a></p>
-        <p><a href ="copyrightLegislationAndControl.html" >The Copyright Design And Patents Act 1988</a></p>
-        <p>The Regulation of Investigatory Powers Act 2000</p>
+    <div class="topLeft">
+        <p>This Website is Open Source! <br> <a href="https://github.com/SkellXC/EthicsWebsite">Contribute here</a></p>
     </div>
+    <div class="content">
+        <h1>La Tour Eiffel</h1>
+        <h2>Paris, France</h2>
+        <h3>Constructed 1887-1889</h3>
+        <p class="highlight">Did you know there are 1665 steps on the Eiffel Tower?</p>
 
-    <h5>Ethics</h5>
+        <h4 onclick="toggleDropdown()"><u>Laws</u></h4>
+        <div id="dropdown" class="dropdown-content" onclick="toggleDropdown()">
+            <p><a href="dataProtectionAct.html">The Data Protection Act 1998</a></p>
+            <p><a href="ComputerMisuseAct.html">The Computer Misuse Act 1990</a></p>
+            <p><a href="copyrightLegislationAndControl.html">The Copyright Design And Patents Act 1988</a></p>
+            <p>The Regulation of Investigatory Powers Act 2000</p>
+        </div>
+
+        <h5>Ethics</h5>
+    </div>
 
     <script>
         function toggleDropdown() {
